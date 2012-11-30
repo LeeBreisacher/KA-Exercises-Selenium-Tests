@@ -39,6 +39,9 @@ public class SeleniumTests {
 	public void testParallelLines1() {
 		this.driver.get(this.baseUrl + "/parallel_lines_1.html?seed=1");
 		this.verifyBasics("Parallel lines 1");
+		WebElement graphieDiv = this.driver.findElement(By.id("parallel-lines"));
+		// Verify that the first child of the graphie div is an svg node.
+		Assert.assertEquals("svg", graphieDiv.findElement(By.xpath("*[1]")).getTagName());
 		this.verifyWrongAnswer("130");
 		this.verifyCorrectAnswer("131");
 	}
