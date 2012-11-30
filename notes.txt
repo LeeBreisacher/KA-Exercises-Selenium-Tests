@@ -1,0 +1,8 @@
+Notes
+
+- to force a particular start for an exericse, use ?seed=nn. 
+  - works on local server or on sandcastle (http://sandcastle.khanacademy.org, a server that hosts branches to easily test pull requests, etc.)
+- also ?problem= to specify a particular problem type
+- also see "Permalink: " at bottom of problem area (again, just in sandcastle, not the live site)
+- 
+
